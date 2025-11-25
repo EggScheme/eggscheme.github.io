@@ -26,6 +26,23 @@ compiler for the [IEEE dialect of the Scheme programming
 language](https://standards.ieee.org/ieee/1178/1787/).  Later, Egg
 Scheme will support [R6RS Scheme](https://www.r6rs.org).
 
+### Example
+
+```
+$ cat examples/fact.ss
+(define (fact n)
+  (if (zero? n)
+      1
+      (* n (fact (- n 1)))))
+(display (fact 30))
+(newline)
+$ eggscheme examples/fact.ss
+265252859812191058636308480000000
+$ eggscheme -ofact examples/fact.ss
+$ ./fact
+265252859812191058636308480000000
+```
+
 Naming
 ------
 
