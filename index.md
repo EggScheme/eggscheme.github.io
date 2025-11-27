@@ -65,7 +65,7 @@ The executable dynamically links the Egg Scheme standard library.
 Implementation Languages
 ------------------------
 
-Egg Scheme is implemented in IEEE Scheme with its runtime implemented
+Egg Scheme is implemented in IEEE Scheme, with its runtime implemented
 in ISO C23.  It can be bootstrapped using an existing IEEE Scheme
 implementation, including itself.
 
@@ -74,7 +74,7 @@ Further Developments
 
 As soon as the compiler is sufficiently efficient and produces
 sufficiently efficient code, the implementation of R6RS will begin.
-Once the the R6RS implementation is stable, the implementation will be
+Once the R6RS implementation is stable, the implementation will be
 extended to support the good parts of R7RS and many SRFIs as well.
 
 License
